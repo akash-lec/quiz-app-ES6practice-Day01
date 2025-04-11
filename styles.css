@@ -1,0 +1,101 @@
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Main Quiz Container */
+  #quiz-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #quiz-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Question Styling */
+  #question-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Options List Styling */
+  #options-container {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #options-container li {
+    background-color: #f4f4f4;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #options-container li:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  #options-container li:active {
+    transform: scale(0.98);
+  }
+  
+  /* Next Button Styling */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* Result Section */
+  #result-container {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4CAF50;
+    display: none;
+  }
+  
+  #score {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
